@@ -4,7 +4,7 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div className="relative mt-auto bottom-0 text-custom-gray">
+    <div className="relative mt-auto bottom-0 text-custom-gray pb-10">
       <div className="flex flex-col w-full space-y-5 pr-10 ">
         <Image
           className="my-7"

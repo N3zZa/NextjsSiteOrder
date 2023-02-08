@@ -76,7 +76,7 @@ export const Header = () => {
           Войти
         </Link>
 
-        <div className="flex">
+        <div className="flex items-center">
           <Link
             className="lg:inline-block py-[13px] px-[20px] bg-custom-orange text-[#fff]  rounded-2xl transition duration-200"
             href="#"

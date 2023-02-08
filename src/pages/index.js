@@ -3,6 +3,7 @@ import { Header } from 'components/Header';
 import Head from 'next/head'
 
 import { Nunito_Sans } from "@next/font/google";
+import { Main } from 'components/Main';
 
 const nunito = Nunito_Sans({
   weight: ["400", "600", "800", "700", "900"],
@@ -23,6 +24,7 @@ export default function Home() {
         <link rel="icon" href="/logoimg.svg" />
       </Head>
       <Header />
+      <Main />
       <Footer />
     </div>
   );
