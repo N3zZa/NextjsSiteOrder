@@ -1,9 +1,9 @@
 import { Footer } from 'components/Footer';
 import { Header } from 'components/Header';
 import Head from 'next/head'
+import { Main } from 'components/Main';
 
 import { Nunito_Sans } from "@next/font/google";
-import { Main } from 'components/Main';
 
 const nunito = Nunito_Sans({
   weight: ["400", "600", "800", "700", "900"],
@@ -13,6 +13,7 @@ const nunito = Nunito_Sans({
 
 
 export default function Home() {
+
   return (
     <div
       className={`${nunito.variable} font-nunito max-w-[1400px] mx-auto px-[24px]`}

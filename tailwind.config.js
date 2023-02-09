@@ -21,6 +21,9 @@ module.exports = {
         nunito: ["var(--font-nunito)", ...fontFamily.sans],
         unbounded: ["var(--font-unbounded)", ...fontFamily.sans],
       },
+      content: {
+        'arrow': 'url("/Services/Arrow.svg")',
+      },
     },
   },
   plugins: [],

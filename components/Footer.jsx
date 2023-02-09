@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="flex flex-col w-full space-y-5 pr-10 ">
         <Image
           className="my-7"
-          src={"/logo.svg"}
+          src={"/Logo.svg"}
           width={140}
           height={20}
           alt={"logo"}
@@ -21,30 +21,30 @@ export const Footer = () => {
             </p>
             <div className="flex flex-col my-10 md:space-y-3 order-4">
               <ul className="flex flex-col lg:items-center lg:w-auto lg:space-x-6  md:flex-row">
-                <li>Услуги</li>
-                <li>Как это работает</li>
-                <li>SMMFlow vs Другие сайты</li>
-                <li>Правила сервиса</li>
+                <li className='hover:text-custom-orange cursor-pointer'>Услуги</li>
+                <li className='hover:text-custom-orange cursor-pointer'>Как это работает</li>
+                <li className='hover:text-custom-orange cursor-pointer'>SMMFlow vs Другие сайты</li>
+                <li className='hover:text-custom-orange cursor-pointer'>Правила сервиса</li>
               </ul>
               <ul className="flex flex-col lg:items-center lg:w-auto lg:space-x-6 md:flex-row">
-                <li>Отзывы</li>
-                <li>Преимущества</li>
-                <li>Частые вопросы</li>
-                <li>Контакты</li>
+                <li className='hover:text-custom-orange cursor-pointer'>Отзывы</li>
+                <li className='hover:text-custom-orange cursor-pointer'>Преимущества</li>
+                <li className='hover:text-custom-orange cursor-pointer'>Частые вопросы</li>
+                <li className='hover:text-custom-orange cursor-pointer'>Контакты</li>
               </ul>
             </div>
           </div>
           <div className="space-y-3">
             <p>Нужна помощь?</p>
             <Link
-              className="flex space-x-2 items-center px-[24px] py-[12px] border border-gray-300 rounded-2xl"
+              className="flex space-x-2 items-center px-[24px] py-[12px] border border-gray-300 hover:border-custom-orange rounded-2xl"
               href={"#"}
             >
-              <Image src={"/chat.svg"} width={25} height={25} alt={"chat"} />
+              <Image src={"/Chat.svg"} width={25} height={25} alt={"chat"} />
               <p>Чат с поддержкой</p>
             </Link>
             <Link
-              className="flex space-x-2 items-center px-[24px] py-[12px] border border-gray-300 rounded-2xl"
+              className="flex space-x-2 items-center px-[24px] py-[12px] border border-gray-300 hover:border-custom-orange rounded-2xl"
               href={"#"}
             >
               <Image
@@ -59,9 +59,15 @@ export const Footer = () => {
         </div>
         <div className="flex justify-center order-2 items-center md:justify-between">
           <div className="hidden space-x-10 text-gray-400 md:flex">
-            <Link href={"#"}>Политика конфиденциальности</Link>
-            <Link href={"#"}>Публичная оферта</Link>
-            <Link href={"#"}>Пользовательское соглашение</Link>
+            <Link href={"#"} className="hover:text-custom-orange">
+              Политика конфиденциальности
+            </Link>
+            <Link href={"#"} className="hover:text-custom-orange">
+              Публичная оферта
+            </Link>
+            <Link href={"#"} className="hover:text-custom-orange">
+              Пользовательское соглашение
+            </Link>
           </div>
           <div className="flex space-x-6 items-center">
             <Link href={"#"}>
@@ -79,7 +85,7 @@ export const Footer = () => {
               />
             </Link>
             <Link href={"#"}>
-              <Image src={"/qiwi.svg"} width={40} height={40} alt={"eqiwi"} />
+              <Image src={"/qiwi.svg"} width={40} height={40} alt={"qiwi"} />
             </Link>
           </div>
         </div>

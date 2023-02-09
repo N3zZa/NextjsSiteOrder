@@ -80,7 +80,7 @@ export const Main = () => {
               <br className="md:block hidden" /> соцсетях
             </span>{" "}
             <Image
-              className="absolute xl:right-[26%] lg:right-[20%] right-[10%] top-[10px] hidden md:block"
+              className="absolute xl:right-[25%] lg:right-[20%] right-[10%] top-[10px] hidden md:block"
               src={"/click.svg"}
               width={50}
               height={50}
@@ -398,7 +398,7 @@ export const Main = () => {
           <div className="flex space-x-10">
             <div
               ref={navigationPrevRef}
-              class={`swiper-button-prev hidden md:block`}
+              className={`swiper-button-prev hidden md:block`}
             >
               <Image
                 src={"/Arrowleft.svg"}
@@ -409,7 +409,7 @@ export const Main = () => {
             </div>
             <div
               ref={navigationNextRef}
-              class="swiper-button-next  hidden md:block"
+              className="swiper-button-next  hidden md:block"
             >
               <Image
                 src={"/Arrowright.svg"}
@@ -593,11 +593,11 @@ export const Main = () => {
               className={`${unboundedFont.variable} font-unbounded font-bold text-[36px] leading-[72px]`}
             >
               Скидки{" "}
-              <span className="ml-3 px-[22px] py-[14px] text-custom-orange bg-custom-orange bg-opacity-20 text-[24px] leading-[36px] rounded-3xl">
+              <span className="ml-3  md:px-[22px] md:py-[14px] text-custom-orange md:bg-custom-orange md:bg-opacity-20 text-[36px] md:text-[24px] leading-[36px] rounded-3xl">
                 до 50%
               </span>{" "}
               <br />в нашем
-              <br className="md:hidden block  " />
+              <br className="md:hidden block " />
               телеграм-канале
             </h1>
             <p className="text-custom-gray">
@@ -737,7 +737,7 @@ export const Main = () => {
             <div className="text-white space-y-10">
               <button className="bg-white px-[20px] py-[24px] rounded-2xl">
                 <Image
-                  src={"/logo.svg"}
+                  src={"/Logo.svg"}
                   width={100}
                   height={20}
                   alt={"logo"}
@@ -860,8 +860,8 @@ export const Main = () => {
           </Link>
         </div>
       </div>
-      <div className="mt-[200px] px-15 items-center justify-center">
-        <div className="flex justify-center md:justify-between md:items-start items-center">
+      <div className="mt-[200px] px-15 items-center justify-center flex">
+        <div className="flex justify-center md:justify-between md:items-start items-center md:w-[80%]">
           <div>
             <div className="md:hidden flex flex-wrap items-center justify-center mb-8">
               <Image
@@ -931,7 +931,7 @@ export const Main = () => {
               Закажите больше активности
               <br /> в ваших социальных сетях
             </h1>
-            <button className="text-white bg-custom-orange rounded-2xl px-[32px] py-[18px] ">
+            <button className="text-white bg-custom-orange rounded-2xl px-[32px] py-[18px]">
               Начать продвижение
             </button>
           </div>
