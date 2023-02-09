@@ -2,7 +2,7 @@ import { Footer } from 'components/Footer';
 import { Header } from 'components/Header';
 import Head from 'next/head'
 import { Main } from 'components/Main';
-
+import { Unbounded } from "@next/font/google";
 import { Nunito_Sans } from "@next/font/google";
 
 const nunito = Nunito_Sans({
@@ -11,6 +11,11 @@ const nunito = Nunito_Sans({
   variable: "--font-nunito",
 });
 
+export const unboundedFont = Unbounded({
+  weight: ["400", "600", "800", "700", "900"],
+  subsets: ["latin"],
+  variable: "--font-unbounded",
+});
 
 export default function Home() {
 

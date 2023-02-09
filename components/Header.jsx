@@ -1,14 +1,9 @@
 import React, { useState } from 'react'
 import Image from "next/image";
 import Link from "next/link";
-import { Unbounded } from "@next/font/google";
 import {useRouter} from 'next/router'
+import unboundedFont from "../src/pages/index"
 
-const unboundedFont = Unbounded({
-  weight: ["400", "600", "800", "700", "900"],
-  subsets: ["latin"],
-  variable: "--font-unbounded",
-});
 
 export const Header = () => {
  const [active, setActive] = useState(false);

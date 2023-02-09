@@ -1,7 +1,7 @@
 import { Footer } from 'components/Footer'
 import { Header } from 'components/Header'
 import ServicesMain from 'components/ServicesMain';
-import React from 'react'
+import React from "react";
 
 
 import { Nunito_Sans } from "@next/font/google";
@@ -11,7 +11,6 @@ const nunito = Nunito_Sans({
   subsets: ["latin"],
   variable: "--font-nunito",
 });
-
 
 const index = () => {
   return (
