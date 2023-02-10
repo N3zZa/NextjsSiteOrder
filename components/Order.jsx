@@ -17,14 +17,19 @@ const Order = () => {
         ></Image>
         <div>
           <p>Подписчики “Живые ❤️”</p>
-          <a className="text-blue-500" href="https://www.instagram.com/durov/" target='_blank'>
+          <a
+            className="text-blue-500"
+            href="https://www.instagram.com/durov/"
+            target="_blank"
+            rel="noreferrer"
+          >
             https://www.instagram.com/durov/
           </a>
         </div>
       </div>
       <p className="w-[20%]">10 000</p>
       <p className="w-[20%]">{"1 000"}₽</p>
-      <div className='w-[14%]'>
+      <div className="w-[14%]">
         <ButtonCompleted />
       </div>
     </div>

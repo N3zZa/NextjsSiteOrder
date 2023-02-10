@@ -24,6 +24,7 @@ const OrderMobile = () => {
               className="text-blue-500"
               href="https://www.instagram.com/durov/"
               target="_blank"
+              rel="noreferrer"
             >
               https://www.instagram.com/durov/
             </a>

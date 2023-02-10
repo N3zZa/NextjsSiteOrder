@@ -21,7 +21,7 @@ export const Footer = () => {
             </p>
             <div className="flex flex-col my-10 md:space-y-3 order-4">
               <ul className="flex flex-col lg:items-center lg:w-auto lg:space-x-6  md:flex-row">
-                <Link href={'/services'}>
+                <Link href={"/services"}>
                   <li className="hover:text-custom-orange cursor-pointer">
                     Услуги
                   </li>
@@ -80,14 +80,25 @@ export const Footer = () => {
             <a
               href={"https://flexsmm.com/privacy"}
               target="_blank"
+              rel="noreferrer"
               className="hover:text-custom-orange"
             >
               Политика конфиденциальности
             </a>
-            <a href={"#"} target="_blank" className="hover:text-custom-orange">
+            <a
+              href={"#"}
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-custom-orange"
+            >
               Публичная оферта
             </a>
-            <a href={"#"} target="_blank" className="hover:text-custom-orange">
+            <a
+              href={"#"}
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-custom-orange"
+            >
               Пользовательское соглашение
             </a>
           </div>
