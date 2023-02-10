@@ -25,6 +25,7 @@ const deposits = () => {
           <div className="hidden lg:block space-y-10">
             <DepositsOrder />
             <DepositsOrder />
+            <DepositsOrder />
           </div>
           <div className="block lg:hidden space-y-10">
             <DepositsOrderMobile />

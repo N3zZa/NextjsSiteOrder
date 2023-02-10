@@ -39,7 +39,7 @@ const ProfileMenu = () => {
             } p-3 bg-opacity-20 rounded-2xl flex items-center space-x-3`}
           >
             <Image
-              src={`/profile/${
+              src={`/Profile/${
                 pathname === "/profile" ? "OrdersSelected.svg" : "Orders.svg"
               }`}
               width={30}
@@ -56,7 +56,7 @@ const ProfileMenu = () => {
             } p-3 bg-opacity-20 rounded-2xl flex items-center space-x-3`}
           >
             <Image
-              src={`/profile/${
+              src={`/Profile/${
                 pathname === "/profile/deposits"
                   ? "MoneySelected.svg"
                   : "Money.svg"
