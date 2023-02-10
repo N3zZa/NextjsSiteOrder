@@ -4,8 +4,8 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div className="relative mt-auto bottom-0 text-custom-gray pb-10">
-      <div className="flex flex-col w-full space-y-5 pr-10 ">
+    <div className="relative mt-auto bottom-0 text-custom-gray pb-10 font-nunito">
+      <div className="flex flex-col w-full space-y-5 pr-10 px-5">
         <Image
           className="my-7"
           src={"/Logo.svg"}
@@ -13,7 +13,7 @@ export const Footer = () => {
           height={20}
           alt={"logo"}
         />
-        <div className="flex flex-col justify-between md:flex-row items-center md:items-start">
+        <div className="flex flex-col justify-between md:flex-row items-center md:items-start px-2">
           <div>
             <p>
               SMMSMM - сервис, где вы сможете приобрести качественное
@@ -21,16 +21,34 @@ export const Footer = () => {
             </p>
             <div className="flex flex-col my-10 md:space-y-3 order-4">
               <ul className="flex flex-col lg:items-center lg:w-auto lg:space-x-6  md:flex-row">
-                <li className='hover:text-custom-orange cursor-pointer'>Услуги</li>
-                <li className='hover:text-custom-orange cursor-pointer'>Как это работает</li>
-                <li className='hover:text-custom-orange cursor-pointer'>SMMFlow vs Другие сайты</li>
-                <li className='hover:text-custom-orange cursor-pointer'>Правила сервиса</li>
+                <Link href={'/services'}>
+                  <li className="hover:text-custom-orange cursor-pointer">
+                    Услуги
+                  </li>
+                </Link>
+                <li className="hover:text-custom-orange cursor-pointer">
+                  Как это работает
+                </li>
+                <li className="hover:text-custom-orange cursor-pointer">
+                  SMMFlow vs Другие сайты
+                </li>
+                <li className="hover:text-custom-orange cursor-pointer">
+                  Правила сервиса
+                </li>
               </ul>
               <ul className="flex flex-col lg:items-center lg:w-auto lg:space-x-6 md:flex-row">
-                <li className='hover:text-custom-orange cursor-pointer'>Отзывы</li>
-                <li className='hover:text-custom-orange cursor-pointer'>Преимущества</li>
-                <li className='hover:text-custom-orange cursor-pointer'>Частые вопросы</li>
-                <li className='hover:text-custom-orange cursor-pointer'>Контакты</li>
+                <li className="hover:text-custom-orange cursor-pointer">
+                  Отзывы
+                </li>
+                <li className="hover:text-custom-orange cursor-pointer">
+                  Преимущества
+                </li>
+                <li className="hover:text-custom-orange cursor-pointer">
+                  Частые вопросы
+                </li>
+                <li className="hover:text-custom-orange cursor-pointer">
+                  Контакты
+                </li>
               </ul>
             </div>
           </div>
@@ -59,15 +77,19 @@ export const Footer = () => {
         </div>
         <div className="flex justify-center order-2 items-center md:justify-between">
           <div className="hidden space-x-10 text-gray-400 md:flex">
-            <Link href={"#"} className="hover:text-custom-orange">
+            <a
+              href={"https://flexsmm.com/privacy"}
+              target="_blank"
+              className="hover:text-custom-orange"
+            >
               Политика конфиденциальности
-            </Link>
-            <Link href={"#"} className="hover:text-custom-orange">
+            </a>
+            <a href={"#"} target="_blank" className="hover:text-custom-orange">
               Публичная оферта
-            </Link>
-            <Link href={"#"} className="hover:text-custom-orange">
+            </a>
+            <a href={"#"} target="_blank" className="hover:text-custom-orange">
               Пользовательское соглашение
-            </Link>
+            </a>
           </div>
           <div className="flex space-x-6 items-center">
             <Link href={"#"}>

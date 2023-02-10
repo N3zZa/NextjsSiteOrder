@@ -19,7 +19,7 @@ export const Main = () => {
 
 
   return (
-    <div className="flex justify-center py-[150px] overflow-x-auto flex-col">
+    <div className="flex justify-center py-[150px] overflow-x-hidden flex-col">
       <div>
         <Image
           className="absolute top-[140px] xl:left-[57%] 2xl:rotate-0 left-[7%] rotate-[-20deg]"
@@ -113,7 +113,7 @@ export const Main = () => {
         <div className="flex self-stretch lg:justify-around lg:flex-row flex-col justify-center lg:items-start items-center">
           <div className="lg:w-[50%]">
             <h1
-              className={`mb-10 font-bold text-[36px] leading-[54px] font-unbounded ${unboundedFont.variable}`}
+              className={`mb-10 font-bold text-[36px] leading-[54px] font-unbounded`}
             >
               Быстрый заказ
             </h1>

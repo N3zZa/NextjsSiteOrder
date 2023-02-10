@@ -18,8 +18,8 @@ module.exports = {
         "custom-gray": "#676767",
       },
       fontFamily: {
-        nunito: ["var(--font-nunito)", ...fontFamily.sans],
-        unbounded: ["var(--font-unbounded)", ...fontFamily.sans],
+        nunito: ["Nunito Sans", ...fontFamily.sans],
+        unbounded: ["Unbounded", ...fontFamily.sans],
       },
       content: {
         'arrow': 'url("/Services/Arrow.svg")',

@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import React, { useState } from 'react'
 
@@ -5,6 +6,13 @@ const ServicesMain = () => {
 
   return (
     <div className="flex flex-col space-y-10 mb-[200px] lg:mb-[100px]">
+      <Head>
+        <title>Услуги</title>
+        <meta name="description" content="Services Main" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/logoimg.svg" />
+      </Head>
+
       <div className="md:flex space-x-[120px] justify-center flex-wrap xl:justify-around md:flex-row md:items-start flex-col hidden">
         <div>
           <div className="flex items-center space-x-3">
@@ -697,7 +705,7 @@ const ServicesMain = () => {
             </ul>
           </div>
         </details>
-        <details className="w-[90%]">
+        <details className="sm:w-[90%] w-[60%]">
           <summary className="bg-inherit px-[16px] text-lg cursor-pointer list-none  flex justify-between">
             <div className="flex items-center space-x-6">
               <Image
