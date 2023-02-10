@@ -101,28 +101,28 @@ const { pathname } = useRouter();
             Быстрый заказ
           </Link>
 
-          {pathname === "/profile" ||
-            (pathname === "/profile/deposits" && (
-              <div className="space-x-4 hidden lg:flex">
-                <div className="flex items-center space-x-2">
-                  <Image
-                    src={"/Profile/Balance.svg"}
-                    width={30}
-                    height={30}
-                    alt={"Balance"}
-                  ></Image>
-                  <p className="font-bold whitespace-nowrap">{`1 653`}₽</p>
-                </div>
-                <div className="items-center flex justify-center bg-custom-orange bg-opacity-20 px-[8px] rounded-md cursor-pointer">
-                  <Image
-                    src={"/Profile/add.svg"}
-                    width={15}
-                    height={15}
-                    alt={"plus"}
-                  ></Image>
-                </div>
+          {((pathname === "/profile/editPassword" ||
+            pathname === "/profile/deposits") ) && (
+            <div className="space-x-4 hidden lg:flex">
+              <div className="flex items-center space-x-2">
+                <Image
+                  src={"/Profile/Balance.svg"}
+                  width={30}
+                  height={30}
+                  alt={"Balance"}
+                ></Image>
+                <p className="font-bold whitespace-nowrap">{`1 653`}₽</p>
               </div>
-            ))}
+              <div className="items-center flex justify-center bg-custom-orange bg-opacity-20 px-[8px] rounded-md cursor-pointer">
+                <Image
+                  src={"/Profile/add.svg"}
+                  width={15}
+                  height={15}
+                  alt={"plus"}
+                ></Image>
+              </div>
+            </div>
+          )}
 
           {/* ССЫЛКА В ЗАЛОГИНЕННЫЙ ПРОФИЛЬ */}
           <Link className="hidden lg:block" href="/profile">
