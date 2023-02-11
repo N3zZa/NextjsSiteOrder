@@ -12,6 +12,7 @@ const editPassword = () => {
     document.querySelector("body").classList.add("overflow-hidden");
     showCompletedPasswordMenu(true);
   }
+  
   return (
     <div className="font-nunito px-5">
       <Header />
@@ -63,6 +64,7 @@ const editPassword = () => {
           >
             Сменить пароль
           </Link>
+
           {completedPasswordMenu && (
             <div className='font-nunito'>
               <div className="fixed right-0 top-0 left-0 bottom-0 w-[100%] h-[100%] bg-black bg-opacity-20 z-50"></div>
@@ -100,6 +102,8 @@ const editPassword = () => {
               </div>
             </div>
           )}
+
+
         </div>
         <Footer />
       </div>

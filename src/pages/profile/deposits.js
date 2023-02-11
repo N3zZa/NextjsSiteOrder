@@ -2,7 +2,6 @@ import DepositsOrder from 'components/DepositsOrder';
 import DepositsOrderMobile from 'components/DepositsOrderMobile';
 import { Footer } from 'components/Footer'
 import { Header } from 'components/Header'
-import NoOrders from 'components/NoOrders';
 import ProfileMenu from 'components/ProfileMenu';
 import React from 'react'
 
