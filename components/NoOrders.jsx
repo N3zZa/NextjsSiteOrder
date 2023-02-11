@@ -3,9 +3,6 @@ import React from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-import Order from "./Order";
-import OrderMobile from "./OrderMobile";
-
 const NoOrders = () => {
   const { pathname } = useRouter();
 
@@ -93,13 +90,27 @@ const NoOrders = () => {
             height={350}
             alt={"profile"}
           ></Image>
-          <h1 className="font-[600] text-[24px] leading-[36px] font-unbounded">
-            Заказов нет
-          </h1>
-          <p className="text-custom-gray text-[18px] leading-[26px]">
-            Вы ещё ни разу ничего не заказывали.<br /> Пополните баланс и сделайте
-            свой первый заказ!
-          </p>
+          {pathname === "/profile" ? (
+            <h1 className="font-[600] text-[24px] leading-[36px] font-unbounded">
+              Заказов нет
+            </h1>
+          ) : (
+            <h1 className="font-[600] text-[24px] leading-[36px] font-unbounded">
+              Пополнений ещё не было
+            </h1>
+          )}
+
+          {pathname === "/profile" ? (
+            <p className="text-custom-gray text-[18px] leading-[26px]">
+              Вы ещё ни разу ничего не заказывали.
+              <br /> Пополните баланс и сделайте свой первый заказ!
+            </p>
+          ) : (
+            <p className="text-custom-gray text-[18px] leading-[26px]">
+              Вы ещё ни разу не пополняли баланс.<br /> Пополните баланс и сделайте
+              свой первый заказ!
+            </p>
+          )}
           <button className="bg-custom-orange text-white px-[20px] py-[14px] rounded-2xl">
             Сделать заказ
           </button>

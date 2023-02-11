@@ -1,6 +1,5 @@
 import { Footer } from 'components/Footer'
 import { Header } from 'components/Header'
-import NoOrders from 'components/NoOrders'
 import ProfileOrders from 'components/ProfileOrders'
 import React from 'react'
 
