@@ -1,7 +1,6 @@
 import { Footer } from 'components/Footer';
 import { Header } from 'components/Header';
-import Image from 'next/image';
-import React, { useState } from 'react'
+  import React from 'react'
 
 const orderPayment = () => {
 

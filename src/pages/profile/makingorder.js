@@ -1,21 +1,11 @@
 import { Footer } from "components/Footer";
 import { Header } from "components/Header";
-import MakingOrder from "components/MakingOrder";
 import MakingOrderFull from "components/MakingOrderFull";
-import MakingOrderMobile from "components/MakingOrderMobile";
 import Head from "next/head";
-import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 
 const makingorder = () => {
-const [isHovering, setIsHovering] = useState(false);
 
-  const handleMouseOver = () => {
-    setIsHovering(true);
-  };
-  const handleMouseOut = () => {
-  setIsHovering(false);
-  };
 
   return (
     <div>
