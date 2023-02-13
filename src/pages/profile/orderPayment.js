@@ -1,7 +1,7 @@
 import { Footer } from 'components/Footer';
 import { Header } from 'components/Header';
 import React from 'react'
-import { OrderPaymentComp } from "components/OrderPaymentComp";
+import OrderPaymentComp  from "components/OrderPaymentComp";
 const orderPayment = () => {
 
   return (
