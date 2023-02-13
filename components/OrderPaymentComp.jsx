@@ -1,26 +1,25 @@
 import React, { useState } from 'react'
 
-const orderPayment = () => {
+const OrderPaymentComp = () => {
+  const [activePaymentRu, setActivePaymentRu] = useState(false);
+  const [activePaymentCard, setActivePaymentCard] = useState(false);
+  const [activePaymentQiwi, setActivePaymentQiwi] = useState(false);
 
-         const [activePaymentRu, setActivePaymentRu] = useState(false);
-         const [activePaymentCard, setActivePaymentCard] = useState(false);
-         const [activePaymentQiwi, setActivePaymentQiwi] = useState(false);
-
-         const onSelectPaymentRu = () => {
-           setActivePaymentRu(!activePaymentRu);
-           setActivePaymentCard(false);
-           setActivePaymentQiwi(false);
-         };
-         const onSelectPaymentCard = () => {
-           setActivePaymentCard(!activePaymentCard);
-           setActivePaymentRu(false);
-           setActivePaymentQiwi(false);
-         };
-         const onSelectPaymentQiwi = () => {
-           setActivePaymentQiwi(!activePaymentQiwi);
-           setActivePaymentRu(false);
-           setActivePaymentCard(false);
-         };
+  const onSelectPaymentRu = () => {
+    setActivePaymentRu(!activePaymentRu);
+    setActivePaymentCard(false);
+    setActivePaymentQiwi(false);
+  };
+  const onSelectPaymentCard = () => {
+    setActivePaymentCard(!activePaymentCard);
+    setActivePaymentRu(false);
+    setActivePaymentQiwi(false);
+  };
+  const onSelectPaymentQiwi = () => {
+    setActivePaymentQiwi(!activePaymentQiwi);
+    setActivePaymentRu(false);
+    setActivePaymentCard(false);
+  };
 
   return (
     <div className="flex flex-col justify-start lg:justify-between lg:flex-row items-center lg:items-start space-y-5">
@@ -240,6 +239,6 @@ const orderPayment = () => {
       </div>
     </div>
   );
-}
+};
 
-export default orderPayment
+export default OrderPaymentComp;
