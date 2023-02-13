@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import React, { useState } from 'react'
+import React from 'react'
 
 const ServicesMain = () => {
 
@@ -532,7 +532,7 @@ const ServicesMain = () => {
                 src={"/Services/YouTube.svg"}
                 width={30}
                 height={30}
-                alt={"logo"}
+                alt={"YouTube"}
               />
               <p className="font-[600] leading-[24px] text-[24px]">YouTube</p>
             </div>
@@ -541,7 +541,7 @@ const ServicesMain = () => {
               src={"/Services/Arrow.svg"}
               width={30}
               height={30}
-              alt={"logo"}
+              alt={"Arrow"}
             />
           </summary>
           <div className="bg-white px-[17px]  text-sm font-light">

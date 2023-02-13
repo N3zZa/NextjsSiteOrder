@@ -10,6 +10,20 @@ const EditPasswordComponent = () => {
     showCompletedPasswordMenu(true);
   };
 
+  const [passwordType, setPasswordType] = useState("password");
+  const [passwordInput, setPasswordInput] = useState("");
+  const handlePasswordChange = (evnt) => {
+    setPasswordInput(evnt.target.value);
+  };
+  const togglePassword = () => {
+    if (passwordType === "password") {
+      setPasswordType("text");
+      return;
+    }
+    setPasswordType("password");
+  };
+
+
   return (
     <div className="space-y-10 flex flex-col">
       <h1 className="font-[600] text-[36px] font-unbounded">Сменить пароль</h1>
@@ -17,8 +31,10 @@ const EditPasswordComponent = () => {
         <div className="space-y-5 relative">
           <p className=" font-[700]">Текущий пароль</p>
           <input
+            type={passwordType}
+            onChange={handlePasswordChange}
+            value={passwordInput}
             className="border border-gray p-[14px] rounded-2xl w-[100%] sm:w-[400px] outline-custom-orange"
-            type="password"
             placeholder="Введите ваш пароль"
           />
           <span className="absolute top-10 sm:left-[365px] left-[93%]">
@@ -34,7 +50,9 @@ const EditPasswordComponent = () => {
           <p className=" font-[700]">Новый пароль</p>
           <input
             className="border border-gray p-[14px] rounded-2xl w-[100%] sm:w-[400px] outline-custom-orange"
-            type="password"
+            type={passwordType}
+            onChange={handlePasswordChange}
+            value={passwordInput}
             placeholder="Введите новый пароль"
           />
           <span className="absolute top-10 sm:left-[365px] left-[93%]">

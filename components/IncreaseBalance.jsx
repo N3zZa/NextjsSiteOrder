@@ -22,6 +22,13 @@ const IncreaseBalance = ({ setActiveBalanceMenu }) => {
        setActivePaymentCard(false);
      };
 
+const onClickClosePassword = () => {
+  document.querySelector("body").classList.remove("overflow-hidden");
+};
+  const onClickClose = () => {
+    onClickClosePassword();
+    setActiveBalanceMenu(false);
+  }
 
   return (
     <>
@@ -29,10 +36,12 @@ const IncreaseBalance = ({ setActiveBalanceMenu }) => {
       <div className="absolute m-0 w-[100%] left-0 bottom-0 h-[100%] items-center z-50 flex justify-center md:m-auto">
         <div className="bg-white p-[25px] font-[600] rounded-t-2xl md:rounded-2xl md:w-[50%] xl:w-[30%] w-[100%] space-y-8">
           <div className="flex justify-between items-center">
-            <h1 className="font-unbounded text-[20px] md:text-[24px]">Пополнение баланса</h1>
+            <h1 className="font-unbounded text-[20px] md:text-[24px]">
+              Пополнение баланса
+            </h1>
 
             <svg
-              onClick={() => setActiveBalanceMenu(false)}
+              onClick={() => onClickClose()}
               className="h-6 w-6 cursor-pointer text-gray-400"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -137,20 +146,32 @@ const IncreaseBalance = ({ setActiveBalanceMenu }) => {
           >
             Оплатить
           </button>
-
           {/* Error */}
-          {/* <div className='flex space-x-3 bg-red-200 rounded-2xl py-[8px] px-[20px]'>
+          {/* <div className='flex space-x-3 bg-red-100 rounded-2xl py-[8px] px-[20px]'>
             <Image
               src={"/Profile/Error.svg"}
               width={30}
               height={30}
-              alt={"Qiwi"}
+              alt={"Error"}
             ></Image>
             <p className='text-red-400'>
               Ошибка при оплате, попробуйте позже или обратитесь <a href="" className='text-blue-400 underline'>в поддержку</a>
             </p>
           </div> */}
           {/* Error */}
+          {/* Completed */}
+          {/* <div className="flex space-x-3 bg-green-200 rounded-2xl py-[8px] px-[20px]">
+            <Image
+              src={"/Profile/Loading.svg"}
+              width={30}
+              height={30}
+              alt={"Loading"}
+            ></Image>
+            <p className="text-green-400">
+              Переходим в платёжную систему
+            </p>
+          </div>{" "} */}
+          {/*  Completed*/}
         </div>
       </div>
     </>

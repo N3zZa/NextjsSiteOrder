@@ -77,14 +77,13 @@ export const Footer = () => {
         </div>
         <div className="flex justify-center order-2 items-center md:justify-between">
           <div className="hidden space-x-10 text-gray-400 md:flex">
-            <a
-              href={"https://flexsmm.com/privacy"}
-              target="_blank"
+            <Link
+              href={"/privacyPolicy"}
               rel="noreferrer"
               className="hover:text-custom-orange"
             >
               Политика конфиденциальности
-            </a>
+            </Link>
             <a
               href={"#"}
               target="_blank"

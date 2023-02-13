@@ -3,11 +3,19 @@ import DepositsOrderMobile from 'components/DepositsOrderMobile';
 import { Footer } from 'components/Footer'
 import { Header } from 'components/Header'
 import ProfileMenu from 'components/ProfileMenu';
+import Head from 'next/head';
 import React from 'react'
 
 const deposits = () => {
   return (
     <div className="font-nunito px-5">
+      <Head>
+        <title>Профиль, история пополнений</title>
+        <meta name="description" content="Orders" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/logoimg.svg" />
+      </Head>
+
       <Header />
       <div className="max-w-[1400px] mx-auto mt-[150px]">
         <ProfileMenu />

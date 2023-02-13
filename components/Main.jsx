@@ -22,49 +22,49 @@ export const Main = () => {
     <div className="flex justify-center py-[150px] overflow-x-hidden flex-col">
       <div>
         <Image
-          className="absolute top-[140px] xl:left-[57%] 2xl:rotate-0 left-[7%] rotate-[-20deg]"
+          className="absolute top-[140px] xl:left-[57%] 2xl:rotate-0 left-[7%] rotate-[-20deg] z-[-5]"
           src={"/socialsBg/telegram.svg"}
           width={80}
           height={80}
           alt={"img"}
         ></Image>
         <Image
-          className="absolute top-[350px]  xl:left-[22%] xl:w-[150px] w-[100px] md:left-[2%] left-[-40px]"
+          className="absolute top-[350px]  xl:left-[22%] xl:w-[150px] w-[100px] md:left-[2%] left-[-40px] z-[-5]"
           src={"/socialsBg/inst.svg"}
           width={150}
           height={150}
           alt={"img"}
         ></Image>
         <Image
-          className="absolute top-[190px] xl:left-[32%] right-[15%] xl:w-[100px] w-[80px]"
+          className="absolute top-[190px] xl:left-[32%] right-[15%] xl:w-[100px] w-[80px] z-[-5]"
           src={"/socialsBg/youtube.svg"}
           width={100}
           height={100}
           alt={"img"}
         ></Image>
         <Image
-          className="absolute top-[350px] xl:right-[25%]  xl:w-[150px] w-[100px] md:right-[5%] right-[-30px]"
+          className="absolute top-[350px] xl:right-[25%]  xl:w-[150px] w-[100px] md:right-[5%] right-[-30px] z-[-5]"
           src={"/socialsBg/tiktok.svg"}
           width={150}
           height={150}
           alt={"img"}
         ></Image>
         <Image
-          className="absolute top-[550px] xl:right-[38%] right-[20%]"
+          className="absolute top-[550px] xl:right-[38%] right-[20%] z-[-5]"
           src={"/socialsBg/facebook.svg"}
           width={80}
           height={80}
           alt={"img"}
         ></Image>
         <Image
-          className="absolute top-[700px] lg:right-[30%] right-[10%] xl:w-[150px] w-[100px]"
+          className="absolute top-[700px] lg:right-[30%] right-[10%] xl:w-[150px] w-[100px] z-[-5]"
           src={"/socialsBg/twitch.svg"}
           width={150}
           height={150}
           alt={"img"}
         ></Image>
         <Image
-          className="absolute top-[750px] lg:left-[35%] left-[10%] xl:w-[150px] w-[100px]"
+          className="absolute top-[750px] lg:left-[35%] left-[10%] xl:w-[150px] w-[100px] z-[-5]"
           src={"/socialsBg/vk.svg"}
           width={150}
           height={150}
